@@ -11,6 +11,7 @@
         }
         p {
             margin-right: 40px;
+            font-size: 13px;
         }
         h1 {
             margin: 0px 400px;
@@ -22,15 +23,40 @@
             border-radius: 25px;
             padding: 0px 20px;
             height: 32px;
+            border-style: solid;
+            border-width: 2px;
+        }
+        .redondo:hover{
+            background-color: black;
+            color:white;
+        }
+        p:hover{
+            color:blueviolet;
         }
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+        #sumate{
+            border-style: solid;
+            border-width: 2px;
+            border-color: blueviolet;
+        }
+        #sumate:hover{
+            background-color: blueviolet;
+            color:white;
+        }
+        h1{
+            font-size: 25px;
+        }
+        #introduction-text{
+            letter-spacing: -3px;
+        }
+
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 17px 40px; justify-content: space-between">
         <div id="header-left">
             <img src="logo.svg">
         </div>
@@ -43,13 +69,13 @@
             <button class="redondo">Sumate +</button>
         </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
+    <div id="introduction" style="padding: 80px; padding-right: 5px; padding-left: 5px;">
         <div id="introduction-text">
             <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo" id="sumate" style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
 </body>
